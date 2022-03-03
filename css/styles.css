@@ -1,0 +1,603 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+/* "Configs" */
+:root{
+    font-size: 10px;
+    --color-strongdark:   #101010;
+    --color-mediumdark:   #171717;
+    --color-stronggrey:   #212121;
+    --color-mediumgrey:   #333333;
+    --color-weakgrey:     #828282;
+    --color-white:        #F9F9F9;
+    --color-green:        #00DF5E;
+    --color-selectgreen:  #2f9b5c;
+}
+
+::selection{
+    background-color: var(--color-selectgreen);
+}
+
+*, html{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--color-mediumdark);
+}
+
+/* Scroll-bar */
+body::-webkit-scrollbar{
+    width: 0.8rem;
+}
+  
+body::-webkit-scrollbar-track{
+    background: var(--color-strongdark)
+}
+  
+body::-webkit-scrollbar-thumb{
+    background-color: var(--color-green);
+    border-radius: 2rem;
+}
+
+/* Padrões */
+section{
+    position: relative;
+    padding: 0 22rem;
+}
+
+.content{
+    background-color: var(--color-strongdark);
+}
+
+.container{
+    width: 100%;
+    padding: 5rem 0rem;
+}
+
+/* Navbar */
+.navbar{
+    position: sticky;
+
+    padding: 1.8rem 22rem;
+    height: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--color-mediumdark);
+}
+
+.navbar-title a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 2.4rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+.navbar-title a:hover{
+    color: var(--color-weakgrey);
+}
+
+.navbar-content{
+    display: flex;
+    gap: 5rem;
+}
+
+.navbar-list{
+    list-style: none;
+
+    display: flex;
+    gap: 4rem;
+}
+
+.navbar-item a{
+    text-decoration: none;
+    font-size: 1.8rem;
+
+    color: var(--color-white);
+
+    transition: all 200ms ease-in-out;
+}
+
+.navbar-item a:hover{
+    color: var(--color-weakgrey);
+}
+
+/* Section - Home */
+.main{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    color: var(--color-white);
+}
+
+.main-text{
+    width: 50%;
+}
+
+#hello{
+    font-size: 5rem;
+}
+
+#myname{
+    font-size: 6.4rem;
+}
+
+#myoffice{
+    font-size: 2.8rem;
+}
+
+.main-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-top: 3rem;
+    gap: 2.5rem;
+}
+
+.first-button{
+    background-color: var(--color-green);
+    border: 2px solid var(--color-green);
+    color: var(--color-mediumdark);
+
+    display: inline-block;
+    width: 25rem;
+    height: 6.5rem;
+
+    outline: none;
+
+    text-decoration: none;
+    font-size: 2.2rem;
+
+    box-shadow: 0 0 40px 40px var(--color-green) inset, 0 0 0 0 var(--color-green);
+    transition: all 500ms ease-in-out;
+}
+
+.first-button:hover{
+    box-shadow: 0 0 0 0 var(--color-green) inset;
+    background-color: transparent;
+    color: var(--color-green);
+    
+    cursor: pointer;
+}
+
+.first-button-alter{
+    border: 2px solid var(--color-green);
+    background-color: transparent;
+    color: var(--color-green);
+    
+    display: inline-block;
+    width: 25rem;
+    height: 6.5rem;
+
+    outline: none;
+
+    text-decoration: none;
+    font-size: 2.2rem;
+
+    transition: all 500ms ease-in-out, color 500ms ease-in-out;
+}
+
+.first-button-alter:hover{
+    box-shadow: 0 0 40px 40px var(--color-green) inset;
+    color: var(--color-mediumdark);
+
+    cursor: pointer;
+}
+
+/*
+.second-button{
+    border: 2px solid var(--color-weakgrey);
+    background-color: transparent;
+    color: var(--color-white);
+    
+    display: inline-block;
+    width: 25rem;
+    height: 6.5rem;
+
+    outline: none;
+
+    text-decoration: none;
+    font-size: 2.2rem;
+
+    transition: all 500ms ease-in-out, color 500ms ease-in-out;
+}
+
+.second-button:hover{
+    box-shadow: 0 0 40px 40px var(--color-weakgrey) inset;
+    color: var(--color-white);
+
+    cursor: pointer;
+}
+*/
+
+.main-image img{
+    width: 70rem;
+}
+
+.wave{
+    position: relative;
+    display: block;
+    width: 100%;
+
+    transform: translateY(0.3rem);
+}
+
+/* Section - About me */
+.about{
+    display: flex;
+    flex-direction: column;
+
+    height: fit-content;
+
+    gap: 8rem;
+}
+
+.text-about{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2.4rem;
+}
+
+.text-about h1{
+    text-align: center;
+    font-size: 5.2rem;
+
+    color: var(--color-white);
+}
+
+.text-about span{
+    font-size: 6.8rem;
+    color: var(--color-green);
+}
+
+.text-about p{
+    text-align: justify;
+    font-size: 2.8rem;
+
+    color: var(--color-white);
+}
+
+.text-about a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: all 200ms ease-in-out;
+}
+
+.text-about a:hover{
+    color: var(--color-green);
+}
+
+.cards-about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 2rem;
+}
+
+.card-about a{
+    border-radius: 50%;
+}
+
+.card-about article{
+    background-color: var(--color-mediumdark);
+    border: solid 1px var(--color-mediumgrey);
+    color: var(--color-green);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+
+    transition: border 1s ease;
+}
+
+.card-about article:hover{
+    border: 1px solid var(--color-green);
+}
+
+.card-about h1{
+    font-size: 2rem;
+    color: var(--color-white);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-about p{
+    font-size: 1.8rem;
+    color: var(--color-weakgrey);
+}
+
+/* Section - Projects */
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: fit-content;
+
+    gap: 4rem;
+}
+
+.title-projects h1{
+    text-align: center;
+    font-size: 5.2rem;
+
+    color: var(--color-white);
+}
+
+.title-projects span{
+    font-size: 6.8rem;
+    color: var(--color-green);
+}
+
+.cards-projects{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-projects{
+    background-color: var(--color-mediumdark);
+    border: 1px solid var(--color-mediumgrey);
+
+    width: 42rem;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    gap: 1.4rem;
+    padding: 2rem;
+    margin-bottom: 6rem;
+
+    transition: border 1s ease;
+}
+
+.card-projects:hover{
+    border: 1px solid var(--color-green);
+}
+
+.card-projects img{
+    background-color: var(--color-strongdark);
+    border: 1px solid var(--color-mediumgrey);
+
+    width: 100%;
+    height: 65%;
+
+    transition: border 1s ease;
+}
+
+.card-projects:hover img{
+    border: 1px solid var(--color-green);
+}
+
+.card-projects h1{
+    font-size: 2rem;
+    color: var(--color-white);
+
+    margin-bottom: 0.4rem;
+}
+
+.card-projects p{
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: var(--color-weakgrey);
+}
+
+
+.card-projects button{
+    background-color: var(--color-mediumgrey);
+    color: var(--color-weakgrey);
+
+    width: 100%;
+    height: 4rem;
+
+    border-radius: 15rem;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    transition: all 1s ease;
+}
+
+.card-projects:hover button{
+    background-color: var(--color-green);
+    color: var(--color-strongdark);
+
+    cursor: pointer;
+}
+
+/* Section - Knowledges */
+.knowledges{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    height: fit-content;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 6rem;
+}
+
+.text-skills{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2.4rem;
+
+    width: 45%;
+}
+
+.text-skills h1{
+    text-align: left;
+    font-size: 5.2rem;
+
+    color: var(--color-white);
+}
+
+.text-skills span{
+    font-size: 6.8rem;
+    color: var(--color-green);
+}
+
+.text-skills p{
+    font-size: 2.8rem;
+    text-align: justify;
+
+    color: var(--color-white);
+
+}
+
+#card-mechanic{
+    color: var(--color-weakgrey);
+}
+
+#text-html, #text-css, #text-js, #text-java, #text-spring, #text-mysql{
+    display: none;
+}
+
+.cards-skills{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+
+    width: 55%;
+
+    gap: 4rem;
+}
+
+.card-skill{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    width: 20rem;
+    height: 20rem;
+
+    border: 1px solid var(--color-mediumgrey);
+    background-color: var(--color-mediumdark);
+
+    transition: all 1s ease;
+}
+
+.card-skill:hover{
+    border: 1px solid var(--color-green);
+}
+
+.card-skill-name-high{
+    position: absolute;
+
+    opacity: 0;
+    
+    transform: translateY(-380%);
+    padding: 0.5rem;
+    width: 20rem;
+
+    font-size: 2rem;
+    color: var(--color-white);
+
+    border: 1px solid var(--color-mediumdark);
+    background-color: var(--color-mediumdark);
+
+    transition: all 500ms ease;
+}
+
+.card-skill:hover .card-skill-name-high{
+    opacity: 1;
+}
+
+.card-skill-name-low{
+    position: absolute;
+    
+    opacity: 0;
+
+    transform: translateY(380%);
+    padding: 0.5rem;
+    width: 20rem;
+
+    font-size: 2rem;
+    color: var(--color-white);
+
+    border: 1px solid var(--color-mediumdark);
+    background-color: var(--color-mediumdark);
+
+    transition: all 500ms ease;
+}
+
+.card-skill:hover .card-skill-name-low{
+    opacity: 1;
+}
+
+/* Footer */
+footer{
+    position: relative;
+    padding: 0rem 22rem;
+}
+
+.footer-content{
+    padding: 2.8rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 1px solid var(--color-mediumgrey);
+    background-color: var(--color-strongdark);
+}
+
+.footer-content p{
+    color: var(--color-weakgrey);
+
+    font-weight: normal;
+    font-size: 2rem;
+
+    margin-bottom: 0.8rem;
+}
+
+.footer-content span{
+    transition: all 200ms ease-in-out;
+}
+
+.footer-content span:hover{
+    color: var(--color-green);
+}
