@@ -62,9 +62,11 @@ section{
 }
 
 /* Navbar */
-.navbar{
-    position: sticky;
+.header{
+    position: fixed;
+}
 
+.navbar{
     padding: 1.8rem 22rem;
     height: fit-content;
 
@@ -83,13 +85,8 @@ section{
     transition: all 200ms ease-in-out;
 }
 
-.navbar-title a:hover{
-    color: var(--color-weakgrey);
-}
-
-.navbar-content{
-    display: flex;
-    gap: 5rem;
+.navbar-title a{
+    cursor: default;
 }
 
 .navbar-list{
@@ -105,11 +102,31 @@ section{
 
     color: var(--color-white);
 
+    position: relative;
+
     transition: all 200ms ease-in-out;
 }
 
-.navbar-item a:hover{
-    color: var(--color-weakgrey);
+.navbar-item a::after{
+    position: absolute;
+
+    content: "";
+
+    width: 0%;
+    height: 0.2rem;
+
+    left: 0;
+    bottom: -0.25rem;
+
+    transition: all 370ms ease-in-out;
+}
+
+.navbar-item a:hover::after{
+    width: 100%;
+
+    background-color: #00DF5E;
+
+    /*background: linear-gradient(90deg, #212121 1%, #00df5e 100%);*/
 }
 
 /* Section - Home */
@@ -477,20 +494,30 @@ section{
     color: var(--color-green);
 }
 
+.paragraph-align{
+    justify-content: flex-start;
+    align-self: center;
+}
+
 .text-skills p{
     font-size: 2.8rem;
     text-align: justify;
 
     color: var(--color-white);
 
+    position: absolute;
+
+    left: 11.8%;
+    width: 35%;
+
+    opacity: 0;
+
+    transition: all 500ms ease;
 }
 
 #card-mechanic{
     color: var(--color-weakgrey);
-}
-
-#text-html, #text-css, #text-js, #text-java, #text-spring, #text-mysql{
-    display: none;
+    opacity: 1;
 }
 
 .cards-skills{

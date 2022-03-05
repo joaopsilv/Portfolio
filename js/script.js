@@ -1,5 +1,4 @@
 /* Navbar Movment */
-let navbar = document.querySelector(".navbar")
 
 
 /* Skills Cards */
@@ -20,55 +19,55 @@ let textspring = document.querySelector("#text-spring")
 let textmysql = document.querySelector("#text-mysql")
 
 card1.addEventListener("mouseover", ()=> {
-    explainment.style.display="none"
-    texthtml.style.display="block"
+    explainment.style.opacity="0"
+    texthtml.style.opacity="1"
 })
 card1.addEventListener("mouseout", ()=> {
-    explainment.style.display="block"
-    texthtml.style.display="none"
+    explainment.style.opacity="1"
+    texthtml.style.opacity="0"
 })
 
 card2.addEventListener("mouseover", ()=> {
-    explainment.style.display="none"
-    textcss.style.display="block"
+    explainment.style.opacity="0"
+    textcss.style.opacity="1"
 })
 card2.addEventListener("mouseout", ()=> {
-    explainment.style.display="block"
-    textcss.style.display="none"
+    explainment.style.opacity="1"
+    textcss.style.opacity="0"
 })
 
 card3.addEventListener("mouseover", ()=> {
-    explainment.style.display="none"
-    textjs.style.display="block"
+    explainment.style.opacity="0"
+    textjs.style.opacity="1"
 })
 card3.addEventListener("mouseout", ()=> {
-    explainment.style.display="block"
-    textjs.style.display="none"
+    explainment.style.opacity="1"
+    textjs.style.opacity="0"
 })
 
 card4.addEventListener("mouseover", ()=> {
-    explainment.style.display="none"
-    textjava.style.display="block"
+    explainment.style.opacity="0"
+    textjava.style.opacity="1"
 })
 card4.addEventListener("mouseout", ()=> {
-    explainment.style.display="block"
-    textjava.style.display="none"
+    explainment.style.opacity="1"
+    textjava.style.opacity="0"
 })
 
 card5.addEventListener("mouseover", ()=> {
-    explainment.style.display="none"
-    textspring.style.display="block"
+    explainment.style.opacity="0"
+    textspring.style.opacity="1"
 })
 card5.addEventListener("mouseout", ()=> {
-    explainment.style.display="block"
-    textspring.style.display="none"
+    explainment.style.opacity="1"
+    textspring.style.opacity="0"
 })
 
 card6.addEventListener("mouseover", ()=> {
-    explainment.style.display="none"
-    textmysql.style.display="block"
+    explainment.style.opacity="0"
+    textmysql.style.opacity="1"
 })
 card6.addEventListener("mouseout", ()=> {
-    explainment.style.display="block"
-    textmysql.style.display="none"
+    explainment.style.opacity="1"
+    textmysql.style.opacity="0"
 })
