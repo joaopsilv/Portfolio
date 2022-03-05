@@ -20,10 +20,14 @@ let textmysql = document.querySelector("#text-mysql")
 
 card1.addEventListener("mouseover", ()=> {
     explainment.style.opacity="0"
-    texthtml.style.opacity="1"
+    setTimeout(()=>{
+        texthtml.style.opacity="1"
+    }, 300)
 })
 card1.addEventListener("mouseout", ()=> {
-    explainment.style.opacity="1"
+    setTimeout(()=>{
+        explainment.style.opacity="1"
+    }, 300)
     texthtml.style.opacity="0"
 })
 

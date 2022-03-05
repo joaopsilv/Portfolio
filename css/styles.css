@@ -62,8 +62,10 @@ section{
 }
 
 /* Navbar */
-.header{
-    position: fixed;
+header{
+    position: sticky;
+    /* inset: 0 0 auto 0; */
+    z-index: 100;
 }
 
 .navbar{
@@ -82,11 +84,9 @@ section{
     text-decoration: none;
     font-size: 2.4rem;
 
-    transition: all 200ms ease-in-out;
-}
-
-.navbar-title a{
     cursor: default;
+
+    transition: all 200ms ease-in-out;
 }
 
 .navbar-list{
@@ -112,21 +112,25 @@ section{
 
     content: "";
 
-    width: 0%;
+    width: 100%;
     height: 0.2rem;
 
     left: 0;
     bottom: -0.25rem;
 
-    transition: all 370ms ease-in-out;
-}
-
-.navbar-item a:hover::after{
-    width: 100%;
+    transform-origin: right; 
+    transform: scaleX(0);
 
     background-color: #00DF5E;
 
-    /*background: linear-gradient(90deg, #212121 1%, #00df5e 100%);*/
+    transition: transform 370ms ease-in-out;
+}
+
+.navbar-item a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+
+    background-color: #00DF5E;
 }
 
 /* Section - Home */
@@ -479,7 +483,7 @@ section{
 
     gap: 2.4rem;
 
-    width: 45%;
+    flex: 1;
 }
 
 .text-skills h1{
@@ -494,11 +498,6 @@ section{
     color: var(--color-green);
 }
 
-.paragraph-align{
-    justify-content: flex-start;
-    align-self: center;
-}
-
 .text-skills p{
     font-size: 2.8rem;
     text-align: justify;
@@ -507,9 +506,7 @@ section{
 
     position: absolute;
 
-    left: 11.8%;
     width: 35%;
-
     opacity: 0;
 
     transition: all 500ms ease;
@@ -566,6 +563,8 @@ section{
     border: 1px solid var(--color-mediumdark);
     background-color: var(--color-mediumdark);
 
+    pointer-events: none;
+
     transition: all 500ms ease;
 }
 
@@ -587,6 +586,8 @@ section{
 
     border: 1px solid var(--color-mediumdark);
     background-color: var(--color-mediumdark);
+
+    pointer-events: none;
 
     transition: all 500ms ease;
 }
