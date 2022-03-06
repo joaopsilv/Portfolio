@@ -1,4 +1,34 @@
 /* Navbar Movment */
+let navbar = document.querySelector("header")
+let position0 = window.scrollY
+
+window.addEventListener("scroll", ()=>{
+    if(window.pageYOffset > position0){
+        navbar.classList.add("sticky")
+    }
+    else{
+        navbar.classList.remove("sticky")
+    }
+
+    let currentscroll = window.pageYOffset
+    if(currentscroll > 625){
+        navbar.classList.add("out")
+    }
+    else{
+        navbar.classList.remove("out")
+    }
+})
+
+/* Switch Toggle */
+let switchtoggle = document.getElementsByClassName("switch-toggle")[0]
+let icon = document.querySelector(".fas")
+
+switchtoggle.addEventListener("click", ()=>{
+    icon.classList.toggle("fa-moon")
+    icon.classList.toggle("fa-circle")
+    icon.classList.toggle("switch-animation")
+    switchtoggle.classList.toggle("changebg")
+})
 
 
 /* Skills Cards */
@@ -33,45 +63,65 @@ card1.addEventListener("mouseout", ()=> {
 
 card2.addEventListener("mouseover", ()=> {
     explainment.style.opacity="0"
-    textcss.style.opacity="1"
+    setTimeout(()=>{
+        textcss.style.opacity="1"
+    }, 300)
 })
 card2.addEventListener("mouseout", ()=> {
-    explainment.style.opacity="1"
+    setTimeout(()=>{
+        explainment.style.opacity="1"
+    }, 300)
     textcss.style.opacity="0"
 })
 
 card3.addEventListener("mouseover", ()=> {
     explainment.style.opacity="0"
-    textjs.style.opacity="1"
+    setTimeout(()=>{
+        textjs.style.opacity="1"
+    }, 300)
 })
 card3.addEventListener("mouseout", ()=> {
-    explainment.style.opacity="1"
+    setTimeout(()=>{
+        explainment.style.opacity="1"
+    }, 300)
     textjs.style.opacity="0"
 })
 
 card4.addEventListener("mouseover", ()=> {
     explainment.style.opacity="0"
-    textjava.style.opacity="1"
+    setTimeout(()=>{
+        textjava.style.opacity="1"
+    }, 300)
 })
 card4.addEventListener("mouseout", ()=> {
-    explainment.style.opacity="1"
+    setTimeout(()=>{
+        explainment.style.opacity="1"
+    }, 300)
     textjava.style.opacity="0"
 })
 
 card5.addEventListener("mouseover", ()=> {
     explainment.style.opacity="0"
-    textspring.style.opacity="1"
+    setTimeout(()=>{
+        textspring.style.opacity="1"
+    }, 300)
 })
 card5.addEventListener("mouseout", ()=> {
-    explainment.style.opacity="1"
+    setTimeout(()=>{
+        explainment.style.opacity="1"
+    }, 300)
     textspring.style.opacity="0"
 })
 
 card6.addEventListener("mouseover", ()=> {
     explainment.style.opacity="0"
-    textmysql.style.opacity="1"
+    setTimeout(()=>{
+        textmysql.style.opacity="1"
+    }, 300)
 })
 card6.addEventListener("mouseout", ()=> {
-    explainment.style.opacity="1"
+    setTimeout(()=>{
+        explainment.style.opacity="1"
+    }, 300)
     textmysql.style.opacity="0"
 })

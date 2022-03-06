@@ -63,9 +63,29 @@ section{
 
 /* Navbar */
 header{
+    background-color: var(--color-mediumdark);
+    transition: all 200ms ease;
+}
+
+.sticky{
+    inset: 0 0 auto 0;
     position: sticky;
-    /* inset: 0 0 auto 0; */
+
+    background-color: #171717f8;
+    backdrop-filter: blur(0.3rem);
+
     z-index: 100;
+
+    /* border-bottom: 1px solid var(--color-mediumgrey); */
+}
+
+.sticky .navbar-title a{
+    cursor: pointer;
+}
+
+.out{
+    transform: translateY(-100%);
+    opacity: 0;
 }
 
 .navbar{
@@ -74,9 +94,7 @@ header{
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    background-color: var(--color-mediumdark);
+    justify-content: space-between
 }
 
 .navbar-title a{
@@ -93,6 +111,13 @@ header{
     list-style: none;
 
     display: flex;
+    gap: 4rem;
+}
+
+.navbar-itens{
+    display: flex;
+    align-items: center;
+
     gap: 4rem;
 }
 
@@ -121,7 +146,7 @@ header{
     transform-origin: right; 
     transform: scaleX(0);
 
-    background-color: #00DF5E;
+    background-color: var(--color-green);
 
     transition: transform 370ms ease-in-out;
 }
@@ -130,7 +155,43 @@ header{
     transform-origin: left;
     transform: scaleX(1);
 
-    background-color: #00DF5E;
+    background-color: var(--color-green);
+}
+
+.switch-toggle{
+    background-color: var(--color-white);
+    border: 3px solid var(--color-white);
+    border-radius: 50px;
+
+    width: 5rem;
+    height: 2rem;;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin-top: 0.2rem;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.switch-toggle i{
+    font-size: 1.2rem;
+    /* color: var(--color-mediumdark); */
+
+    transition: all 320ms ease;
+}
+
+.switch-animation{
+    transform: translateX(-2.8rem) rotate(350deg);
+    color: var(--color-white);
+}
+
+.changebg{
+    background-color: var(--color-strongdark);
+    border: 3px solid var(--color-strongdark);
 }
 
 /* Section - Home */
@@ -159,12 +220,38 @@ header{
     font-size: 2.8rem;
 }
 
+.inline-div{
+    display: inline-block;
+}
+
+.typed-out{
+    font-size: 2.8rem;
+
+    border-right: 4px solid var(--color-green);
+
+    overflow: hidden;
+    width: 0;
+
+    white-space: nowrap;
+
+    animation: typing 4s steps(45, end) forwards; 
+    /* blink-caret 1s step-end infinite; */
+}
+@keyframes typing{
+    from {width: 0}
+    to {width: 100%}
+}
+/* @keyframes blink-caret{
+    from, to {border-color: transparent}
+    50% {border-color: var(--color-green);}
+} */
+
 .main-buttons{
     display: flex;
     align-items: center;
     justify-content: flex-start;
 
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     gap: 2.5rem;
 }
 
@@ -208,7 +295,7 @@ header{
     text-decoration: none;
     font-size: 2.2rem;
 
-    transition: all 500ms ease-in-out, color 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 .first-button-alter:hover{
@@ -245,7 +332,7 @@ header{
 */
 
 .main-image img{
-    width: 70rem;
+    width: 65em;
 }
 
 .wave{
@@ -481,7 +568,7 @@ header{
     display: flex;
     flex-direction: column;
 
-    gap: 2.4rem;
+    gap: 2rem;
 
     flex: 1;
 }
@@ -514,6 +601,9 @@ header{
 
 #card-mechanic{
     color: var(--color-weakgrey);
+
+    font-size: 2.4rem;
+
     opacity: 1;
 }
 
@@ -546,6 +636,10 @@ header{
 
 .card-skill:hover{
     border: 1px solid var(--color-green);
+}
+
+.card-skill img{
+    pointer-events: none;
 }
 
 .card-skill-name-high{
