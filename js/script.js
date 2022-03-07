@@ -50,6 +50,15 @@ let projectsCards = document.querySelectorAll(".cards-projects article")
 let projectsCardsTitles = document.querySelectorAll(".card-projects h1")
 let projectsCardsSubtitles = document.querySelectorAll(".card-projects p")
 let projectsCardsImages = document.querySelectorAll(".card-projects img")
+let projectsCardsButtons = document.querySelectorAll(".card-projects button")
+
+let knowledgesTitle = document.querySelector(".text-skills h1")
+let knowledgesTexts = document.querySelectorAll(".text-skills p")
+let knowledgesCards = document.querySelectorAll(".cards-skills article")
+let knowledgesSubcards = document.querySelectorAll(".cards-skills span")
+
+let footerContent = document.querySelector(".footer-content")
+let footerTexts = document.querySelectorAll(".footer-content p")
 
 switchToggle.addEventListener("click", ()=>{
     /*Switch Toggle*/
@@ -125,11 +134,34 @@ switchToggle.addEventListener("click", ()=>{
         projectsCardsImages[i].classList.toggle("dark-img")
         projectsCardsImages[i].classList.toggle("light-img")
     }
+    for (let i = 0; i < projectsCardsButtons.length; i++){
+        projectsCardsButtons[i].classList.toggle("dark-button")
+        projectsCardsButtons[i].classList.toggle("light-button")
+    }
 
     /* Section Knowledges */
-
+    knowledgesTitle.classList.toggle("dark-font")
+    knowledgesTitle.classList.toggle("light-font")
+    for (let i = 0; i < knowledgesTexts.length; i++){
+        knowledgesTexts[i].classList.toggle("dark-font")
+        knowledgesTexts[i].classList.toggle("light-font")
+    }
+    for (let i = 0; i < knowledgesCards.length; i++){
+        knowledgesCards[i].classList.toggle("dark-card")
+        knowledgesCards[i].classList.toggle("light-card")
+    }
+    for (let i = 0; i < knowledgesSubcards.length; i++){
+        knowledgesSubcards[i].classList.toggle("dark-card-span")
+        knowledgesSubcards[i].classList.toggle("light-card-span")
+    }
     
     /* Footer - Credits */
+    footerContent.classList.toggle("dark-footer")
+    footerContent.classList.toggle("light-footer")
+    for (let i = 0; i < footerTexts.length; i++){
+        footerTexts[i].classList.toggle("weakgrey-font")
+        footerTexts[i].classList.toggle("mediumgrey-font")
+    }
 
 })
 

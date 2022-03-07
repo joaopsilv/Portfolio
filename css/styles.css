@@ -96,7 +96,7 @@ section{
 }
 
 .mediumgrey-font{
-    color: var(--color-mediumgrey)
+    color: var(--color-mediumgrey);
 }
 
 .dark-card{
@@ -106,7 +106,19 @@ section{
 
 .light-card{
     background-color: var(--color-stronglight);
-    border: 1px solid var(--color-weakgrey);
+    border: 1px solid var(--color-stronglight);
+}
+
+.dark-card-span{
+    color: var(--color-white);
+    border: 1px solid var(--color-mediumdark);
+    background-color: var(--color-mediumdark);
+}
+
+.light-card-span{
+    color: var(--color-strongdark);
+    border: 1px solid var(--color-stronglight);
+    background-color: var(--color-stronglight); 
 }
 
 /* Navbar */
@@ -551,7 +563,7 @@ header{
 
 .light-img{
     background-color: var(--color-mediumlight);
-    border: 1px solid var(--color-weakgrey);
+    border: 1px solid var(--color-stronglight);
 }
 
 .card-projects:hover img{
@@ -569,9 +581,6 @@ header{
 }
 
 .card-projects button{
-    background-color: var(--color-mediumgrey);
-    color: var(--color-weakgrey);
-
     width: 100%;
     height: 4rem;
 
@@ -583,14 +592,30 @@ header{
     transition: all 1s ease;
 }
 
-
-
 .card-projects:hover button{
-    background-color: var(--color-green);
-    color: var(--color-strongdark);
-
     cursor: pointer;
 }
+
+.dark-button{
+    background-color: var(--color-mediumgrey);
+    color: var(--color-weakgrey);
+}
+
+.dark-button:hover{
+    background-color: var(--color-green);
+    color: var(--color-strongdark);
+}
+
+.light-button{
+    background-color: var(--color-weakgrey);
+    color: var(--color-stronglight);
+}
+
+.light-button:hover{
+    background-color: var(--color-green);
+    color: var(--color-mediumlight);
+}
+
 
 /* Section - Knowledges */
 .knowledges{
@@ -620,8 +645,6 @@ header{
 .text-skills h1{
     text-align: left;
     font-size: 5.2rem;
-
-    color: var(--color-white);
 }
 
 .text-skills span{
@@ -632,8 +655,6 @@ header{
 .text-skills p{
     font-size: 2.8rem;
     text-align: justify;
-
-    color: var(--color-white);
 
     position: absolute;
 
@@ -672,9 +693,6 @@ header{
     width: 20rem;
     height: 20rem;
 
-    border: 1px solid var(--color-mediumgrey);
-    background-color: var(--color-mediumdark);
-
     transition: all 1s ease;
 }
 
@@ -696,10 +714,6 @@ header{
     width: 20rem;
 
     font-size: 2rem;
-    color: var(--color-white);
-
-    border: 1px solid var(--color-mediumdark);
-    background-color: var(--color-mediumdark);
 
     pointer-events: none;
 
@@ -720,10 +734,6 @@ header{
     width: 20rem;
 
     font-size: 2rem;
-    color: var(--color-white);
-
-    border: 1px solid var(--color-mediumdark);
-    background-color: var(--color-mediumdark);
 
     pointer-events: none;
 
@@ -746,14 +756,19 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
 
+.dark-footer{
     border-top: 1px solid var(--color-mediumgrey);
     background-color: var(--color-strongdark);
 }
 
-.footer-content p{
-    color: var(--color-weakgrey);
+.light-footer{
+    border-top: 1px solid var(--color-weakgrey);
+    background-color: var(--color-mediumlight);
+}
 
+.footer-content p{
     font-weight: normal;
     font-size: 2rem;
 
@@ -767,3 +782,6 @@ footer{
 .footer-content span:hover{
     color: var(--color-green);
 }
+
+
+/* Building Page */
