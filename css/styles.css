@@ -12,6 +12,11 @@
     --color-white:        #F9F9F9;
     --color-green:        #00DF5E;
     --color-selectgreen:  #2f9b5c;
+
+    --color-stronglight:  #D9D9D9;
+    --color-mediumlight:  #F2F2F2;
+
+    --transition-default: all 320ms ease;
 }
 
 ::selection{
@@ -29,7 +34,16 @@ body{
     width: 100%;
     scroll-behavior: smooth;
     font-family: 'DM Sans', sans-serif;
+
+    transition: var(--transition-default)
+}
+
+.dark-body{
     background-color: var(--color-mediumdark);
+}
+
+.light-body{
+    background-color: var(--color-stronglight);
 }
 
 /* Scroll-bar */
@@ -53,7 +67,15 @@ section{
 }
 
 .content{
+    transition: var(--transition-default);
+}
+
+.dark-section{
     background-color: var(--color-strongdark);
+}
+
+.light-section{
+    background-color: var(--color-mediumlight);
 }
 
 .container{
@@ -61,26 +83,64 @@ section{
     padding: 5rem 0rem;
 }
 
+.dark-font{
+    color: var(--color-white);
+}
+
+.weakgrey-font{
+    color: var(--color-weakgrey);
+}
+
+.light-font{
+    color: var(--color-strongdark);
+}
+
+.mediumgrey-font{
+    color: var(--color-mediumgrey)
+}
+
+.dark-card{
+    background-color: var(--color-mediumdark);
+    border: 1px solid var(--color-mediumgrey);
+}
+
+.light-card{
+    background-color: var(--color-stronglight);
+    border: 1px solid var(--color-weakgrey);
+}
+
 /* Navbar */
 header{
+    transition: var(--transition-default);
+}
+
+.dark-header{
     background-color: var(--color-mediumdark);
-    transition: all 200ms ease;
+}
+
+.light-header{
+    background-color: var(--color-stronglight);
 }
 
 .sticky{
     inset: 0 0 auto 0;
     position: sticky;
 
-    background-color: #171717f8;
     backdrop-filter: blur(0.3rem);
 
-    z-index: 100;
-
-    /* border-bottom: 1px solid var(--color-mediumgrey); */
+    z-index: 1000;
 }
 
 .sticky .navbar-title a{
     cursor: pointer;
+}
+
+.dark-sticky{
+    background-color: #171717f8;
+}
+
+.light-sticky{
+    background-color: #D9D9D9f8;
 }
 
 .out{
@@ -98,13 +158,12 @@ header{
 }
 
 .navbar-title a{
-    color: var(--color-white);
     text-decoration: none;
     font-size: 2.4rem;
 
     cursor: default;
 
-    transition: all 200ms ease-in-out;
+    transition: var(--transition-default);
 }
 
 .navbar-list{
@@ -125,11 +184,9 @@ header{
     text-decoration: none;
     font-size: 1.8rem;
 
-    color: var(--color-white);
-
     position: relative;
 
-    transition: all 200ms ease-in-out;
+    transition: var(--transition-default);
 }
 
 .navbar-item a::after{
@@ -178,15 +235,21 @@ header{
 }
 
 .switch-toggle i{
-    font-size: 1.2rem;
-    /* color: var(--color-mediumdark); */
-
     transition: all 320ms ease;
+}
+
+.fa-moon{
+    font-size: 1.6rem;
+    color: var(--color-mediumdark);
+}
+
+.fa-circle{
+    font-size: 1.2rem;
+    color: var(--color-stronglight);
 }
 
 .switch-animation{
     transform: translateX(-2.8rem) rotate(350deg);
-    color: var(--color-white);
 }
 
 .changebg{
@@ -201,7 +264,7 @@ header{
     align-items: center;
     justify-content: flex-start;
 
-    color: var(--color-white);
+    transition: all 320ms ease;
 }
 
 .main-text{
@@ -214,10 +277,7 @@ header{
 
 #myname{
     font-size: 6.4rem;
-}
-
-#myoffice{
-    font-size: 2.8rem;
+    white-space: nowrap;
 }
 
 .inline-div{
@@ -225,7 +285,7 @@ header{
 }
 
 .typed-out{
-    font-size: 2.8rem;
+    font-size: 2.75rem;
 
     border-right: 4px solid var(--color-green);
 
@@ -234,17 +294,19 @@ header{
 
     white-space: nowrap;
 
-    animation: typing 4s steps(45, end) forwards; 
-    /* blink-caret 1s step-end infinite; */
+    padding-right: 1rem;
+
+    animation: typing 4s steps(45, end) forwards, 
+    blink-caret 700ms steps(45, end) infinite;
 }
 @keyframes typing{
     from {width: 0}
     to {width: 100%}
 }
-/* @keyframes blink-caret{
-    from, to {border-color: transparent}
+@keyframes blink-caret{
+    0%, 100% {border-color: transparent}
     50% {border-color: var(--color-green);}
-} */
+}
 
 .main-buttons{
     display: flex;
@@ -258,10 +320,9 @@ header{
 .first-button{
     background-color: var(--color-green);
     border: 2px solid var(--color-green);
-    color: var(--color-mediumdark);
 
     display: inline-block;
-    width: 25rem;
+    width: 25.4rem;
     height: 6.5rem;
 
     outline: none;
@@ -270,7 +331,8 @@ header{
     font-size: 2.2rem;
 
     box-shadow: 0 0 40px 40px var(--color-green) inset, 0 0 0 0 var(--color-green);
-    transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out,
+    color 320ms ease;
 }
 
 .first-button:hover{
@@ -279,6 +341,14 @@ header{
     color: var(--color-green);
     
     cursor: pointer;
+}
+
+.dark-button1{
+    color: var(--color-mediumdark);
+}
+
+.light-button1{
+    color: var(--color-stronglight);
 }
 
 .first-button-alter{
@@ -300,36 +370,17 @@ header{
 
 .first-button-alter:hover{
     box-shadow: 0 0 40px 40px var(--color-green) inset;
+
+    cursor: pointer;
+}
+
+.dark-button2:hover{
     color: var(--color-mediumdark);
-
-    cursor: pointer;
 }
 
-/*
-.second-button{
-    border: 2px solid var(--color-weakgrey);
-    background-color: transparent;
-    color: var(--color-white);
-    
-    display: inline-block;
-    width: 25rem;
-    height: 6.5rem;
-
-    outline: none;
-
-    text-decoration: none;
-    font-size: 2.2rem;
-
-    transition: all 500ms ease-in-out, color 500ms ease-in-out;
+.light-button2:hover{
+    color: var(--color-stronglight);
 }
-
-.second-button:hover{
-    box-shadow: 0 0 40px 40px var(--color-weakgrey) inset;
-    color: var(--color-white);
-
-    cursor: pointer;
-}
-*/
 
 .main-image img{
     width: 65em;
@@ -358,13 +409,13 @@ header{
     flex-direction: column;
 
     gap: 2.4rem;
+
+    transition: var(--transition-default);
 }
 
 .text-about h1{
     text-align: center;
     font-size: 5.2rem;
-
-    color: var(--color-white);
 }
 
 .text-about span{
@@ -375,12 +426,9 @@ header{
 .text-about p{
     text-align: justify;
     font-size: 2.8rem;
-
-    color: var(--color-white);
 }
 
 .text-about a{
-    color: var(--color-white);
     text-decoration: none;
     font-weight: bold;
 
@@ -408,13 +456,7 @@ header{
     gap: 2rem;
 }
 
-.card-about a{
-    border-radius: 50%;
-}
-
 .card-about article{
-    background-color: var(--color-mediumdark);
-    border: solid 1px var(--color-mediumgrey);
     color: var(--color-green);
 
     display: flex;
@@ -434,7 +476,6 @@ header{
 
 .card-about h1{
     font-size: 2rem;
-    color: var(--color-white);
 
     display: flex;
     flex-direction: column;
@@ -443,7 +484,6 @@ header{
 
 .card-about p{
     font-size: 1.8rem;
-    color: var(--color-weakgrey);
 }
 
 /* Section - Projects */
@@ -460,8 +500,6 @@ header{
 .title-projects h1{
     text-align: center;
     font-size: 5.2rem;
-
-    color: var(--color-white);
 }
 
 .title-projects span{
@@ -474,12 +512,13 @@ header{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+
+    flex-direction: row;
+
+    gap: 2rem;
 }
 
 .card-projects{
-    background-color: var(--color-mediumdark);
-    border: 1px solid var(--color-mediumgrey);
-
     width: 42rem;
     height: fit-content;
 
@@ -499,13 +538,20 @@ header{
 }
 
 .card-projects img{
-    background-color: var(--color-strongdark);
-    border: 1px solid var(--color-mediumgrey);
-
     width: 100%;
     height: 65%;
 
     transition: border 1s ease;
+}
+
+.dark-img{
+    background-color: var(--color-strongdark);
+    border: 1px solid var(--color-mediumgrey);
+}
+
+.light-img{
+    background-color: var(--color-mediumlight);
+    border: 1px solid var(--color-weakgrey);
 }
 
 .card-projects:hover img{
@@ -514,17 +560,13 @@ header{
 
 .card-projects h1{
     font-size: 2rem;
-    color: var(--color-white);
-
     margin-bottom: 0.4rem;
 }
 
 .card-projects p{
     font-size: 1.6rem;
     font-weight: normal;
-    color: var(--color-weakgrey);
 }
-
 
 .card-projects button{
     background-color: var(--color-mediumgrey);
@@ -540,6 +582,8 @@ header{
 
     transition: all 1s ease;
 }
+
+
 
 .card-projects:hover button{
     background-color: var(--color-green);
