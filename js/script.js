@@ -1,3 +1,6 @@
+/* AOS Init */
+AOS.init();
+
 /* Navbar Movment */
 let header = document.querySelector("header")
 let prevScroll = window.scrollY
@@ -20,7 +23,7 @@ window.addEventListener("scroll", ()=>{
 })
 
 
-/* Switch Toggle */
+/* Switch Toggle + LocalStorage */
 let switchToggle = document.getElementsByClassName("switch-toggle")[0]
 let icon = document.querySelector(".fas")
 
@@ -54,6 +57,7 @@ else{
     body.classList.remove("light")
     icon.classList.remove("switch-animation")
 }
+
 
 /* Skills Cards */
 let explainment = document.querySelector("#card-mechanic")

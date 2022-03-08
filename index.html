@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./assets/images/folder_icon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portfólio | João Silveira</title>
 </head>
 <body>
@@ -48,7 +49,7 @@
         <!-- Section Home -->
         <section id="home">
             <div class="container main">
-                <div class="main-text">
+                <div class="main-text" data-aos="fade-right" data-aos-duration="1000">
                     <div>
                         <span id="hello"> Olá!</span>
                         <br>
@@ -70,7 +71,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="main-image">
+                <div class="main-image" data-aos="fade-left" data-aos-duration="1000">
                     <img src="./assets/svg/programming.svg" alt="programming">
                 </div>
             </div>
@@ -85,27 +86,29 @@
             <div class="container about">
                 <div>
                     <article class="text-about">
-                        <h1>
+                        <h1 data-aos="fade-up" data-aos-duration="800">
                             Sobre mim
                             <span>.</span>
                         </h1>
                         <div>
-                            <p> 
+                            <p data-aos="fade-up" data-aos-duration="800"> 
                                 Olá, meu nome é <strong>João Pedro Gentil da Silveira</strong>. Sou um estudante recém saído de um ensino médio técnico e nutro apreço e atração por programação,
                                 especialmente quando focada em <strong>desenvolvimento web</strong>, área na qual pretendo me aprofundar cada vez mais. Durante esse caminho, espero conseguir
                                 obter conhecimentos acerca de <strong>UI/UX Design</strong>, dois dos meus interesses profissionais.
                             </p>
                             <br>
-                            <p> 
+                            <p data-aos="fade-up" data-aos-duration="800"> 
                                 Minha formação foi iniciada e concluída no <strong>SESI SENAI - Florianópolis</strong>, instituição de ensino responsável pela entrega dos conhecimentos que possuo, de forma geral,
                                 dentro do setor de <strong>Tecnologia da Informação</strong> - os mesmos que são abordados posteriormente com melhores detalhes.
                             </p>
                             <br>
-                            <p> Caso haja curiosidade, acesse meu <a href="#" target="_blank">currículo</a>!</p>
+                            <p data-aos="fade-up" data-aos-duration="800"> 
+                                Caso haja curiosidade, acesse meu <a href="#" target="_blank">currículo</a>!
+                            </p>
                         </div>
                     </article>
                 </div>
-                <div class="cards-about">
+                <div class="cards-about" data-aos="fade-up" data-aos-duration="800">
                     <div class="card-about">
                         <a href="mailto:joaopgsilv@gmail.com" target="_blank">
                             <article>
@@ -153,12 +156,12 @@
         <section class="content" id="projects">
             <div class="container projects">
                 <div class="title-projects">
-                    <h1>
+                    <h1 data-aos="fade-up" data-aos-duration="800">
                         Projetos
                         <span>.</span>
                     </h1>
                 </div>
-                <div class="cards-projects">
+                <div class="cards-projects" data-aos="fade-up" data-aos-duration="800">
                     <article class="card-projects">
                         <img src="./assets/images/numbers_adventure.jpg" alt="project-image"> 
                         <div>
@@ -269,12 +272,12 @@
             <div class="container knowledges">  
                 <div class="skills">
                     <div class="text-skills">
-                        <h1>
+                        <h1 data-aos="fade-right" data-aos-duration="800">
                             Conhecimentos
                             <span>.</span>
                         </h1>
                         <div>
-                            <p id="card-mechanic">
+                            <p id="card-mechanic" data-aos="fade-right" data-aos-duration="800">
                                 *coloque o cursor do mouse <strong>calmamente</strong> no card*
                             </p>
                             <p id="text-html"> 
@@ -303,7 +306,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="cards-skills">
+                    <div class="cards-skills" data-aos="fade-left" data-aos-duration="800">
                         <article class="card-skill html">
                             <img src="./assets/images/html_icon.png" alt="html_icon" width="140px" height="140px">
                             <span class="card-skill-name-high">
@@ -356,6 +359,7 @@
             </p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/script.js"></script>
     <script src="https://kit.fontawesome.com/bda47a69ea.js" crossorigin="anonymous"></script>
 </body>
