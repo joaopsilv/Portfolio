@@ -1,6 +1,7 @@
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
+
 /* "Configs" */
 :root{
     font-size: 10px;
@@ -35,10 +36,6 @@ body{
     scroll-behavior: smooth;
     font-family: 'DM Sans', sans-serif;
 
-    transition: var(--transition-default);
-}
-
-.dark{
     background-color: var(--color-mediumdark);
 
     --font-color1: var(--color-white);
@@ -59,6 +56,8 @@ body{
     --border-color2: var(--color-mediumdark);
 
     --border-color-footer: var(--color-mediumgrey);
+
+    transition: var(--transition-default);
 }
 
 .light{
@@ -83,6 +82,7 @@ body{
 
     --border-color-footer: var(--color-weakgrey);
 }
+
 
 /* Scroll-bar */
 body::-webkit-scrollbar{
@@ -113,6 +113,7 @@ section{
     width: 100%;
     padding: 5rem 0rem;
 }
+
 
 /* Navbar */
 header{
@@ -251,6 +252,7 @@ header{
     background-color: var(--color-strongdark);
     border: 3px solid var(--color-strongdark);
 }
+
 
 /* Section - Home */
 .main{
@@ -391,6 +393,7 @@ svg > path{
 
     transform: translateY(0.3rem);
 }
+
 
 /* Section - About me */
 .about{
@@ -741,6 +744,7 @@ svg > path{
     opacity: 1;
 }
 
+
 /* Footer */
 footer{
     position: relative;
@@ -775,4 +779,45 @@ footer{
     color: var(--color-green);
 }
 
+
 /* Building Page */
+.building{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+   
+    height: 100vh;
+
+    gap: 4rem;
+}
+
+.building img{
+    height: 60vh;
+}
+
+.building-text{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 1.4rem;
+}
+
+.building-text h1{
+    font-size: 4rem;
+    color: var(--font-color1);
+}
+
+.building-text span{
+    font-size: 6rem;
+    color: var(--color-green);
+
+    letter-spacing: 1rem;
+}
+
+.building-text p{
+    font-size: 2.2rem;
+    color: var(--font-color2);
+}

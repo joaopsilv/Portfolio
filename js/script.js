@@ -19,6 +19,7 @@ window.addEventListener("scroll", ()=>{
     }
 })
 
+
 /* Switch Toggle */
 let switchToggle = document.getElementsByClassName("switch-toggle")[0]
 let icon = document.querySelector(".fas")
@@ -31,9 +32,28 @@ switchToggle.addEventListener("click", ()=>{
     icon.classList.toggle("switch-animation")
     switchToggle.classList.toggle("changebg")
 
-    body.classList.toggle("dark")
     body.classList.toggle("light")
+
+    if(document.body.classList.contains("light")){
+        localStorage.setItem("light-mode", "true")
+    }
+    else{
+        localStorage.setItem("light-mode", "false")
+    }
 })
+
+if (localStorage.getItem("light-mode") === "true"){
+    body.classList.add("light")
+
+    icon.classList.add("fa-circle")
+    icon.classList.remove("fa-moon")
+    icon.classList.add("switch-animation")
+    switchToggle.classList.add("changebg")
+}
+else{
+    body.classList.remove("light")
+    icon.classList.remove("switch-animation")
+}
 
 /* Skills Cards */
 let explainment = document.querySelector("#card-mechanic")
