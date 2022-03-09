@@ -8,7 +8,6 @@ and (max-width: 1815px){
     /* Section Knowledges */
     .card-skill{
         width: 18rem;
-        height: 18rem;
     }
 
     .card-skill-name-high{
@@ -35,7 +34,6 @@ and (max-width: 1739px){
     /* Section Knowledges */
     .card-skill{
         width: 16rem;
-        height: 16rem;
     }
 
     .card-skill-name-high{
@@ -113,7 +111,6 @@ and (max-width: 1679px){
 
     .card-about article{
         width: 12rem;
-        height: 12rem;
     }
 
     .email img{
@@ -146,7 +143,6 @@ and (max-width: 1679px){
         font-size: 2.4rem;
         width: 32%;
     }
-
 }
 
 @media screen 
@@ -174,7 +170,6 @@ and (max-width: 1559px){
         font-size: 2.2rem;
         width: 32%;
     }
-
 }
 
 @media screen 
@@ -239,7 +234,6 @@ and (max-width: 1439px){
 
     .card-about article{
         width: 10rem;
-        height: 10rem;
     }
 
     .card-about h1{
@@ -309,7 +303,6 @@ and (max-width: 1439px){
 
     .card-skill{
         width: 12rem;
-        height: 12rem;
     }
 
     .card-skill-name-high{
@@ -360,5 +353,35 @@ and (max-width: 1439px){
     .footer-content p{
         font-size: 1.6rem;
     }
+}
+
+@media screen 
+and (max-width: 1219px){
+    /* Overall */
+    section{
+        padding: 0 10rem;
+    }
+
+    .navbar{
+        padding: 1.8rem 10rem;
+    }
+
+    footer{
+        padding: 0rem 10rem;
+    }
+
+    /* Section Main */
+    .main-image img{
+        width: 40vh;
+    }
+
+    /* Section Projects */
+    .card-projects{
+        width: 36rem;
+    }
+}
+
+@media screen 
+and (max-width: 999px){
 
 }

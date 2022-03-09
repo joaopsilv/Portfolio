@@ -472,7 +472,7 @@ svg > path{
     justify-content: center;
 
     width: 16rem;
-    height: 16rem;
+    aspect-ratio: 1;
     border-radius: 50%;
 
     transition: border 1s ease;
@@ -683,7 +683,7 @@ svg > path{
     border: 1px solid var(--border-color1);
 
     width: 20rem;
-    height: 20rem;
+    aspect-ratio: 1;
 
     transition: all 1s ease;
 }
