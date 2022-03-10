@@ -1,4 +1,4 @@
-if (localStorage.getItem("light-mode") === "false"){
+if (localStorage.getItem("light-mode") === "true"){
     body.classList.add("light")
 }
 else{

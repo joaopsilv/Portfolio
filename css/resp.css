@@ -86,15 +86,10 @@ and (max-width: 1679px){
         font-size: 2.55rem;
     }
 
-    .first-button{
+    .first-button, .first-button-alter{
         width: 23.2rem;
         height: 6rem;
     }    
-
-    .first-button-alter{
-        width: 23.2rem;
-        height: 6rem;
-    }   
 
     /* Section About */
     .text-about p{
@@ -200,15 +195,10 @@ and (max-width: 1439px){
         font-size: 2.2rem;
     }
 
-    .first-button{
+    .first-button, .first-button-alter{
         width: 19.8rem;
         height: 5.8rem;
     }    
-
-    .first-button-alter{
-        width: 19.8rem;
-        height: 5.8rem;
-    }   
 
     /* Section About */
     .text-about h1{
@@ -469,6 +459,171 @@ and (max-width: 879px){
 }
 
 @media screen
-and (max-width: 639px){
+and (max-width: 679px){
+    /* Header - Navbar */
+    .navbar-title a{
+        font-size: 1.8rem;
+    }
 
+    .navbar-item a{
+        font-size: 1.4rem;
+    }
+
+    /* Section Main */
+    #hello{
+        font-size: 3rem;
+    }
+    
+    #myname{
+        font-size: 4.2rem;
+    }
+
+    .typed-out{
+        font-size: 2.2rem;
+    }
+
+    /* Section About */
+    .text-about h1{
+        font-size: 3.2rem;
+    }
+
+    .text-about span{
+        font-size: 4.8rem;
+    }
+
+    .text-about p{
+        font-size: 1.6rem;
+    }
+
+    /* Section Projects */
+    .title-projects h1{
+        font-size: 3.2rem;
+    }
+
+    .title-projects span{
+        font-size: 4.8rem;
+    }
+
+    /*Section Knowledges */
+    .cards-skills{
+        justify-content: center;
+    }
+
+    .card-skill{
+        margin-top: 10rem;
+        width: 55rem;
+    }
+
+    .text-skills h1{
+        font-size: 3.2rem;
+    }
+
+    .text-skills span{
+        font-size: 4.8rem;
+    }
+
+    /* Footer */
+    .footer-content p{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen
+and (max-width: 449px){
+    /* Navbar */
+    .navbar{
+        justify-content: center;
+    }
+
+    .navbar-title{
+        display: none;
+    }
+
+    /* Section Main */
+    #hello{
+        font-size: 2rem;
+    }
+    
+    #myname{
+        font-size: 3.2rem;
+    }
+
+    .typed-out{
+        font-size: 1.6rem;
+    }
+
+    .first-button, .first-button-alter{
+        width: 14rem;
+        height: 4rem;
+        
+        font-size: 1.4rem;
+    }    
+
+    /* Section About */
+    .text-about h1{
+        font-size: 2.2rem;
+    }
+
+    .text-about span{
+        font-size: 3.8rem;
+    }
+
+    .text-about p{
+        font-size: 1.2rem;
+    }
+
+    /* Section Projects */
+    .title-projects h1{
+        font-size: 2.2rem;
+    }
+
+    .title-projects span{
+        font-size: 3.8rem;
+    }
+
+    .card-projects{
+        width: 30rem;
+
+        margin-bottom: 4rem;
+    }
+
+    .card-projects h1{
+        font-size: 1.2rem;
+    }
+
+    .card-projects p{
+        font-size: 1rem;
+    }
+
+    .card-projects button{
+        font-size: 1rem;
+        height: 2.5rem;
+    }
+
+    /* Section Knowledges */
+    .text-skills h1{
+        font-size: 2.2rem;
+    }
+
+    .text-skills span{
+        font-size: 3.8rem;
+    }
+
+    #card-mechanic, .text-skills p{
+        font-size: 1.2rem;
+    }
+
+    .card-skill{
+        margin-top: 3rem;
+    }
+
+    .card-skill-name-low, .card-skill-name-high{
+        width: 18rem;
+    }
+
+    /* Footer */
+    .footer-content p{
+        font-size: 1.2rem;
+        text-align: center;
+    }
 }
