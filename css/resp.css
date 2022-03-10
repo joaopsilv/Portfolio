@@ -526,6 +526,44 @@ and (max-width: 679px){
     .footer-content p{
         font-size: 1.6rem;
     }
+
+    /* Building Page */
+    .building img{
+        height: 50vh;
+    }
+        
+    .building-text h1{
+        font-size: 2.4rem;
+    }
+        
+    .building-text span{
+        font-size: 3.8rem;    
+    }
+        
+    .building-text p{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen 
+and (max-width: 489px){
+    /* Building Page */
+    .building img{
+        height: 30vh;
+    }
+        
+    .building-text h1{
+        font-size: 1.4rem;
+    }
+        
+    .building-text span{
+        font-size: 2rem;   
+        letter-spacing: 0.25rem; 
+    }
+        
+    .building-text p{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen

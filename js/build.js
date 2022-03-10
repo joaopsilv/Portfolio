@@ -3,4 +3,4 @@ if (localStorage.getItem("light-mode") === "true"){
 }
 else{
     body.classList.remove("light")
-}
+} 
