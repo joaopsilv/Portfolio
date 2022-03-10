@@ -10,11 +10,7 @@ and (max-width: 1815px){
         width: 18rem;
     }
 
-    .card-skill-name-high{
-        width: 18rem;
-    }
-
-    .card-skill-name-low{
+    .card-skill-name-low, .card-skill-name-high{
         width: 18rem;
     }
 }
@@ -36,11 +32,7 @@ and (max-width: 1739px){
         width: 16rem;
     }
 
-    .card-skill-name-high{
-        width: 16rem;
-    }
-
-    .card-skill-name-low{
+    .card-skill-name-low, .card-skill-name-high{
         width: 16rem;
     }
 
@@ -168,7 +160,6 @@ and (max-width: 1559px){
     /* Section Knowledges */
     #card-mechanic, .text-skills p{
         font-size: 2.2rem;
-        width: 32%;
     }
 }
 
@@ -383,5 +374,101 @@ and (max-width: 1219px){
 
 @media screen 
 and (max-width: 999px){
+    /* Header - Navbar */
+    .navbar-list{
+        display: none;
+    }
+
+    /* Section Main */
+    .main{
+        justify-content: center;
+    }
+
+    .main-text{
+        width: auto;
+    }
+
+    .main-image{
+        display: none;
+    }
+
+    /* Section Knowledges */
+    .skills{
+        flex-direction: column;
+        gap: 20rem;
+    }
+
+    #card-mechanic, .text-skills p{
+        width: 55%;
+    }
+
+    .cards-skills{
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .card-skill{
+        aspect-ratio: none;
+        width: 20rem;
+        height: 14rem;
+    }
+
+    .card-skill-name-high{
+        width: 20rem;
+        transform: translateY(-340%)
+    }
+
+    .card-skill-name-low{
+        width: 20rem;
+        transform: translateY(340%)
+    }
+
+    /* Footer - Credits */
+    .footer-content{
+        justify-content: center;
+    }
+
+    .footer-content p{
+        display: none;
+    }
+
+    #copyright{
+        display: block;
+    }
+}
+
+@media screen 
+and (max-width: 939px){
+    /* Section Main */
+    .cards-about{
+        display: none;
+    }
+
+    /* Section Projects */
+    .cards-projects{
+        justify-content: center;
+    }
+}
+
+@media screen
+and (max-width: 879px){
+    /* Section Knowledges */
+    .skills{
+        flex-direction: column;
+        gap: 15.5rem;
+    }
+
+    .card-skill{
+        margin-top: 6.5rem;
+        width: 22rem;
+    }
+
+    .card-skill-name-low, .card-skill-name-high{
+        width: 22rem;
+    }
+}
+
+@media screen
+and (max-width: 639px){
 
 }
