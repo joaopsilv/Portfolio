@@ -8,11 +8,12 @@ Além disso, teve a ótima utilizade de recapitular os conhecimentos obtidos dur
 <br>
 <div>Cabe como aviso o fato de que o site constantemente passará por atualizações, afinal a cada dia aprendo e produzo mais.
 Contudo, no atual estado, é bem provável que esteja completo por um bom tempo, como também responsivo no máximo de telas possíveis - performando não tão bem em telas de celulares, embora funcional.</div>
-<br>
-<div>Acesse o site clicando <a href="https://joaosilveira.netlify.app">aqui</a>.</div>
-</div>
 
 ## Tecnologias
 - HTML5;
 - CSS3;
 - JavaScript.
+
+## Links
+- <a href="https://www.figma.com/file/D236qDbE2yRqwnmXro4GZU/Portfólio?node-id=0%3A1">Projeto no Figma</a>;
+- <a href="https://joaosilveira.netlify.app">Site</a>.
