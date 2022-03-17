@@ -15,5 +15,5 @@ Contudo, no atual estado, é bem provável que esteja completo por um bom tempo,
 - JavaScript.
 
 ## Links
-- <a href="https://www.figma.com/file/D236qDbE2yRqwnmXro4GZU/Portfólio?node-id=0%3A1">Projeto no Figma</a>;
-- <a href="https://joaosilveira.netlify.app">Site</a>.
+- <a href="https://www.figma.com/file/D236qDbE2yRqwnmXro4GZU/Portfólio?node-id=0%3A1" target="_blank">Projeto no Figma</a>;
+- <a href="https://joaosilveira.netlify.app" target="_blank">Site</a>.
