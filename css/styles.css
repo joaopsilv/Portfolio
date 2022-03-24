@@ -460,6 +460,10 @@ svg > path{
     gap: 2rem;
 }
 
+.card-about a{
+    border-radius: 50%;
+}
+
 .card-about article{
     color: var(--color-green);
 
