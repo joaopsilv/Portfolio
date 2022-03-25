@@ -3,7 +3,7 @@
 
 ## Sobre
 <div align="justify">
-<div>Webportfólio desenvolvido com a serventia de me apresentar e informar minhas capacidades e meus projetos aos interessados.
+<div>Webportfólio desenvolvido com a serventia de me apresentar, informar minhas capacidades e expor meus projetos aos interessados.
 Além disso, teve a ótima utilizade de recapitular os conhecimentos obtidos durante o ensino médio técnico de Desenvolvimento de Sistemas.</div>
 <br>
 <div>Cabe como aviso o fato de que o site constantemente passará por atualizações, afinal a cada dia aprendo e produzo mais.
